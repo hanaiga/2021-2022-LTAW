@@ -1,4 +1,13 @@
-Esta es la primera linea....
-Linea 2
-Linea 3
-Fin del fichero fich1
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi tienda</title>
+</head>
+<body style="background-color: lightblue">
+    <h1 style="color: green">MI TIENDA</h1>
+</body>
+</html>

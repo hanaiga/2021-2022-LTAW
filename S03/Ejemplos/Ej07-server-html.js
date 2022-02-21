@@ -2,27 +2,14 @@
 //-- Servidor que devuelve una página en HTML cuando se le pide
 //-- el recurso raiz (/), y devuelve una página de ERROR también
 //-- en HTML cuando se pide cualquier otro recurso
-
+//-- Importar el módulo FS
+const fs = require('fs');
 const http = require('http');
 
 const PUERTO = 8080;
 
 //-- Texto HTML de la página principal
-const pagina_main = `
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi tienda</title>
-</head>
-<body style="background-color: lightblue">
-    <h1 style="color: green">MI TIENDA</h1>
-</body>
-</html>
-`
+const pagina_main = fs.readFileSync('fich1.txt','utf8');
 
 //-- Texto HTML de la página de error
 const pagina_error = `
